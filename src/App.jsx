@@ -153,7 +153,7 @@ function App() {
       result = first - second
     }
 
-    else if (operation === 'x') {
+    else if (operation === '*') {
       result = first * second
     }
 
@@ -176,7 +176,7 @@ function App() {
     <div className='App'>
 
       <div className='Header'>
-        Calculator of Joefer Miguel  Tulabut - 3ADA
+        Calculator of Joefer Miguel  Tulabut - IT3A-DA
       </div>
 
 
@@ -230,7 +230,7 @@ function App() {
           />
 
           <CalcButtons
-            label={'x'}
+            label={'*'}
             onClick={onOperatorClick}
           />
 
