@@ -1,0 +1,127 @@
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 30px;
+  background-color: white;
+}
+
+
+/* HEADER */
+
+.Header {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: #ed1c24;
+  color: white;
+
+  border: 3px solid black;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  box-sizing: border-box;
+}
+
+
+/* CALCULATOR */
+
+.Calculator {
+  width: 500px;
+  margin: auto;
+
+  background-color: black;
+
+  border: 3px solid black;
+
+  overflow: hidden;
+}
+
+
+/* DISPLAY */
+
+.CalcDisplay {
+  box-sizing: border-box;
+
+  height: 70px;
+
+  padding: 10px 15px;
+
+  background-color: white;
+  color: black;
+
+  border: 3px solid black;
+
+  font-size: 2.2em;
+  font-weight: bold;
+
+  text-align: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+/* BUTTON GRID */
+
+.CalcButtons {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2px;
+
+  background-color: black;
+}
+
+
+/* BUTTONS */
+
+.CalcButton {
+  height: 60px;
+
+  border: none;
+
+  background-color: #ed1c24;
+
+  color: white;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+
+
+/* HOVER */
+
+.CalcButton:hover {
+  background-color: #c9151c;
+}
+
+
+/* CLICK */
+
+.CalcButton:active {
+  background-color: black;
+  color: white;
+
+  transform: scale(0.96);
+}
+
+
+/* CLEAR BUTTON */
+
+.CalcButtons button:nth-child(13) {
+  background-color: black;
+  color: white;
+}
+
+.CalcButtons button:nth-child(13):hover {
+  background-color: #ed1c24;
+}
